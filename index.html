@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <title> Donate Now</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            body{
+                background-image:url('index.jpg');
+                background-attachment:fixed;
+                background-size:cover;
+            }
+            .navbar{
+                width:100%;
+                background-color:black;
+                overflow:auto;
+            }
+            .navbar a{
+                float:left;
+                padding:12px;
+                color:white;
+                text-decoration:none;
+                font-size:20px;
+                font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            }
+            .active{
+                background-color:#808080;
+            }
+            .vertical-center{
+                margin:0;
+                display:inline;
+                position: relative;
+                top:-35px;
+                left:70rem;
+                -ms-transform:translateY(-50%);
+                transform:translateY(-50%);
+                height:90px;
+            }
+            .block{
+                display:block;
+                border:solid;
+                border-color:black;
+                background-color:blue;
+                padding:14px 28px;
+                cursor:pointer;
+                text-align:center;
+            }
+            @media only screen and (max-width:300px){
+                .text{
+                    font-size:11px;
+                }
+            }
+            
+        </style>
+    </head>
+
+    <body>
+        <div class="navbar">
+            <a class="active" href="#">
+                <i class="fa fa-fw fa-child"></i>
+                Helen mary varghese
+            </a>
+
+            <a href="contact.html" target="_self">
+                <i class="fa fa-fw fa-phone"></i>
+                Contact Us
+            </a>
+        </div>
+            <div class="vertical-center">
+                <a href="payment.html" target="_blank">
+                    <button class="block>">Donate Now</button>
+                </a>
+            </div>
+        
+    </body>
+</html>

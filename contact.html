@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <title>
+        Contact Us
+    </title>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            body{
+                background-image:url('contact.jpg');
+                background-attachment:fixed;
+                background-size:cover;
+                font-family:Arial;
+            }
+            input[type=text], select, textarea{
+                width:500px;
+                padding:12px;
+                border:1px solid #ccc;
+                margin-top:6px;
+                margin-bottom:16px;
+                resize:vertical;
+            }
+            .button{
+                background:white;
+                border-style:outset;
+                border-radius:20px;
+                border-color:rgb(0, 0, 0);
+                height:50px;
+                width:100px;
+                font:bold 15px Times New Roman;
+                text-shadow:none;
+            }
+            .container{
+                border-radius:25px;
+                padding:10px;
+            }
+            form{
+                text-align:center;
+            }
+            textarea{
+                position:relative;
+                left:-10px;
+                width:40rem;
+            }
+            @media screen and (max-width:600px){
+                .column, input[type=submit]{
+                    width:100%;
+                    margin-top:0;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div style="text-align:center">
+            <h1>
+                CONTACT US
+            </h1>
+            </div>
+
+            <div class="row">
+                <div class="column">
+                    <form>
+                        <br><br><br><br>
+                        <label for="fname"><b>First Name</b></label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your first name....">
+                        <br><br><br><br>
+                        <label for="lname"><b>Last Name</b></label>
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name...">
+                        <br><br><br><br>
+                        <label for="text"><b>Donation</b></label>
+                        <select id="text" name="Donation">
+                            <option value="Donating Now">
+                                Donating Now
+                            </option>
+                            <option value="Already Donated">
+                                Already Donated
+                            </option>
+                            <option value="Donate Later">
+                                Donate Later
+                            </option>
+                        </select>
+                        <br><br><br><br>
+                        <label for="Message"><b>Message</b></label>
+                        <br>
+                        <textarea id="Message" name="Message" placeholder="Write something..." style="height:180px"></textarea>
+                        <br><br><br><br>
+                        <button class="button" onclick="myFunction()">Send Message</button>
+
+                        <script>
+                            function myFunction(){
+                                confirm("Your response has been submitted..!");
+                            }
+                        </script>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
